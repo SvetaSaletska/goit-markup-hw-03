@@ -49,6 +49,10 @@ ol {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -89,6 +93,31 @@ text-decoration: none;
 padding-top: 24px;
 padding-bottom: 25px;
 background-color: aqua;
+}
+
+.header-list {
+display: flex;
+gap: 50px;
+}
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.header-navigation{
+display: flex;
+align-items: center;
+}
+
+.header-contacts {
+display: flex;
+margin-left: auto;
+gap: 50px;
+}
+
+.header-logo {
+margin-right: 93px;
 }
 
 .header-logo,
@@ -150,8 +179,9 @@ color: var(--primary-text-color);
 }
 
 .hero-title {
-display: block;
 margin-bottom: 30px;
+margin-right: auto;
+margin-left: auto;
 
 font-weight: 900;
 font-size: 44px;
@@ -236,7 +266,9 @@ color: var(--white-color);
 }
 
 .section-title {
-    margin-top: 0;
+margin-top: 0;
+margin-bottom: 50px;
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -245,6 +277,7 @@ color: var(--secondary-text-color);
 }
 
 .section-subtitle {
+margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -254,6 +287,7 @@ color: var(--secondary-text-color);
 
 .section-text {
 line-height: 1.71;
+margin-bottom: 118px;
 }
 
 .section-subtitle-team {
