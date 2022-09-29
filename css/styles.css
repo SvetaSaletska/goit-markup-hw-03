@@ -1,0 +1,286 @@
+/* Колір основного тексту #757575 */
+
+/* Другорядний колір тексту #212121 */ 
+
+/* Білий колір #FFFFFF */
+
+/* Чорний колір #000000 */
+
+/* Акцент колір #2196F3 */
+
+/* ФОН */
+
+/* Колір із прозорістю rgba(255, 255, 255, 0.6); */
+
+/* Другорядний колір фону #F5F4FA */
+
+/* Основний колір фону #F5F5F5 */
+
+/* Колір хедеру та футеру #2F303A */
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+    --background-color: #F5F5F5;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --header-footer-color: #2F303A; 
+    --transparent-color: rgba(255, 255, 255, 0.6);
+    --main-line-heigh:
+    
+    
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin: 0;
+}
+
+ul, 
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 14px;
+    letter-spacing: 0.03em
+}
+
+.link {
+text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* ----------------Шапка сайту--------------- */
+
+.header {
+padding-top: 24px;
+padding-bottom: 25px;
+}
+
+.header-logo,
+.footer-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: var(--black-color);
+text-decoration: none;
+}
+
+.header-logo-part,
+.footer-logo-part {
+    color: var(--accent-color)
+}
+
+.header-link,
+.header-mail,
+.header-tel {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);
+}
+
+.header-mail,
+.header-tel {
+color: var(--primary-text-color);
+}
+
+.header-list .link.current {
+    color: var(--accent-color);
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+    color: var(--accent-color);
+}
+
+.header-list .link:active {
+    color: var(--accent-color);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* -------------------Hero------------------- */
+
+.hero {
+    background-color: var(--header-footer-color);
+}
+
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--white-color);
+}
+
+/* Button */
+
+.button {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    color: var(--secondary-text-color);
+}
+
+.button-secondary {
+    background-color: #F5F4FA;
+    color: var(--secondary-text-color);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--accent-color);
+}
+
+.hero-button {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+border-color: transparent;
+background-color: var(--accent-color);
+color: var(--white-color);
+cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--secondary-text-color);
+}
+
+/* ------------------Sections---------------- */
+
+.section-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+color: var(--secondary-text-color);
+}
+
+.section-subtitle {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--secondary-text-color);
+}
+
+.section-text {
+line-height: 1.71;
+}
+
+.section-subtitle-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--secondary-text-color)
+}
+
+.section-text-activity {
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+}
+
+/* -----------------Футер-------------------- */
+
+.footer {
+background-color: var(--header-footer-color);
+}
+
+.footer-logo {
+    color: var(--white-color);
+}
+
+.footer-address,
+.footer-list {
+font-style: normal;
+color: var(--white-color);
+line-height: 1.71;
+}
+
+.footer-mail,
+.footer-tel {
+color: var(--transparent-color);
+}
+
+.footer-item .link:hover,
+.footer-item .link:focus {
+    color: var(--accent-color);
+}
+
+/* ---------------Portfolio------------------ */
+
+.section-subtitle-description {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--secondary-text-color);
+}
+
+.section-text-choise {
+font-size: 16px;
+line-height: 1.88;
+color: var(--primary-text-color);
+}
