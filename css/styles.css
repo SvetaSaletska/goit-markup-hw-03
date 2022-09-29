@@ -88,6 +88,7 @@ text-decoration: none;
 .header {
 padding-top: 24px;
 padding-bottom: 25px;
+background-color: aqua;
 }
 
 .header-logo,
@@ -142,16 +143,26 @@ color: var(--primary-text-color);
 
 .hero {
     background-color: var(--header-footer-color);
+    outline: 2px solid red;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
+display: block;
+margin-bottom: 30px;
+
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--white-color);
+
+max-width: 696px;
+
+background-color: tomato;
 }
 
 /* Button */
@@ -164,6 +175,7 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
+border-radius: 4px;
 }
 
 .button-primary {
@@ -187,18 +199,27 @@ cursor: pointer;
 }
 
 .hero-button {
+display: inline-block;
 font-family: inherit;
+
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-display: flex;
+min-width: 216px;
+border-radius: 4px;
+padding: 10px 32px;
+cursor: pointer;
+
+/* display: flex; */
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+
 border-color: transparent;
 background-color: var(--accent-color);
 color: var(--white-color);
-cursor: pointer;
+
+
 }
 
 .hero-button:hover,
@@ -207,8 +228,15 @@ cursor: pointer;
 }
 
 /* ------------------Sections---------------- */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: tomato;
+}
 
 .section-title {
+    margin-top: 0;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
