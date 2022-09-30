@@ -90,8 +90,6 @@ text-decoration: none;
 /* ----------------Шапка сайту--------------- */
 
 .header {
-/* padding-top: 24px;
-padding-bottom: 25px; */
 background-color: aqua;
 }
 
@@ -273,6 +271,11 @@ color: var(--white-color);
     background-color: tomato;
 }
 
+.section-list {
+display: flex;
+gap: 30px;
+}
+
 .section-title {
 margin-top: 0;
 margin-bottom: 50px;
@@ -286,6 +289,7 @@ color: var(--secondary-text-color);
 
 .section-subtitle {
 margin-bottom: 10px;
+
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
