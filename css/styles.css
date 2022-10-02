@@ -51,6 +51,8 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -70,7 +72,7 @@ text-decoration: none;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    outline: 1px solid red;
     margin: 0 auto;
 }
 
@@ -90,7 +92,7 @@ text-decoration: none;
 /* ----------------Шапка сайту--------------- */
 
 .header {
-background-color: aqua;
+border-bottom: 1px solid #ECECEC
 }
 
 .header-list {
@@ -197,8 +199,6 @@ text-transform: uppercase;
 color: var(--white-color);
 
 max-width: 696px;
-
-background-color: tomato;
 }
 
 /* Button */
@@ -215,8 +215,13 @@ border-radius: 4px;
 }
 
 .button-primary {
+    padding: 6px 25px;
+    min-width: 73px;
+
+    border-color: transparent;
     background-color: var(--accent-color);
     color: var(--white-color);
+    
 }
 
 .button-primary:hover,
@@ -225,6 +230,10 @@ border-radius: 4px;
 }
 
 .button-secondary {
+    padding: 6px 22px;
+    min-width: 103px;
+
+    border-color: transparent;
     background-color: #F5F4FA;
     color: var(--secondary-text-color);
 }
@@ -246,7 +255,6 @@ border-radius: 4px;
 padding: 10px 32px;
 cursor: pointer;
 
-/* display: flex; */
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -267,13 +275,24 @@ color: var(--white-color);
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-
-    background-color: tomato;
 }
 
 .section-list {
 display: flex;
 gap: 30px;
+}
+
+.section-item {
+width: calc((100% - 90px) / 4);
+}
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-subtitle-team {
+    margin-bottom: 10px;
 }
 
 .section-title {
@@ -292,7 +311,7 @@ gap: 30px;
 }
 
 .section-item-features {
-max-width: calc(100% - 60px) / 3
+    width: calc((100% - 60px) / 3);
 }
 
 .section-subtitle {
@@ -332,10 +351,13 @@ text-align: center;
 
 .footer {
 background-color: var(--header-footer-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .footer-logo {
     color: var(--white-color);
+    /* margin-bottom: 20px; */
 }
 
 .footer-address,
@@ -345,9 +367,18 @@ color: var(--white-color);
 line-height: 1.71;
 }
 
+.footer-address {
+margin-bottom: 9px;
+margin-top: 20px;
+}
+
 .footer-mail,
 .footer-tel {
 color: var(--transparent-color);
+}
+
+.footer-mail {
+    margin-bottom: 9px;
 }
 
 .footer-item .link:hover,
@@ -369,4 +400,35 @@ color: var(--secondary-text-color);
 font-size: 16px;
 line-height: 1.88;
 color: var(--primary-text-color);
+}
+
+.section-list-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.section-item-btn {
+    max-width: 575px;
+}
+
+.section-list-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.section-item-card {
+    max-width: calc((100% - 60) / 3);
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.card {
+    padding: 20px 24px;
+}
+
+.section-subtitle-description {
+    margin-bottom: 4px;
 }
