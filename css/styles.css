@@ -92,7 +92,8 @@ text-decoration: none;
 /* ----------------Шапка сайту--------------- */
 
 .header {
-border-bottom: 1px solid #ECECEC
+border-bottom: 1px solid #ECECEC;
+background-color: var(--white-color);
 }
 
 .header-list {
@@ -117,9 +118,9 @@ gap: 50px;
 }
 
 .header-logo {
-margin-right: 93px;
-margin-top: 24px;
-margin-bottom: 25px;
+padding-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 
 .header-logo,
@@ -328,6 +329,10 @@ color: var(--secondary-text-color);
 line-height: 1.71;
 }
 
+.section-team {
+    background-color: #F5F4FA;
+}
+
 .section-subtitle-team {
     font-weight: 500;
     font-size: 16px;
@@ -388,6 +393,10 @@ color: var(--transparent-color);
 
 /* ---------------Portfolio------------------ */
 
+.portfolio {
+background-color: var(--white-color);
+}
+
 .section-subtitle-description {
 font-weight: 700;
 font-size: 18px;
@@ -422,11 +431,11 @@ color: var(--primary-text-color);
 
 .section-item-card {
     max-width: calc((100% - 60) / 3);
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .card {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .section-subtitle-description {
