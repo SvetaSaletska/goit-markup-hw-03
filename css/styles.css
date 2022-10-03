@@ -22,7 +22,7 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
-    --background-color: #F5F5F5;
+    --background-color: #FFFFFF;
     --black-color: #000000;
     --white-color: #FFFFFF;
     --header-footer-color: #2F303A; 
@@ -57,7 +57,6 @@ img {
 
 body {
     background-color: var(--background-color);
-    color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
 
     font-size: 14px;
@@ -93,7 +92,6 @@ text-decoration: none;
 
 .header {
 border-bottom: 1px solid #ECECEC;
-background-color: var(--white-color);
 }
 
 .header-list {
@@ -329,7 +327,7 @@ color: var(--secondary-text-color);
 line-height: 1.71;
 }
 
-.section-team {
+.team {
     background-color: #F5F4FA;
 }
 
@@ -349,6 +347,7 @@ text-align: center;
 
 .features {
     padding-top: 0;
+
 }
 
 
